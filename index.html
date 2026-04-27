@@ -814,7 +814,7 @@
   /* ===== TRAINING PROCESS MAP (4 phases) ===== */
   .process-map{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap:0;
     margin:40px 0 80px;
     border:1px solid var(--ink);
@@ -831,8 +831,9 @@
   .process-phase:hover{background:var(--paper-2);}
   .process-phase.p1{border-top:6px solid var(--accent);}
   .process-phase.p2{border-top:6px solid var(--gold);}
-  .process-phase.p3{border-top:6px solid var(--sage);}
-  .process-phase.p4{border-top:6px solid var(--navy);}
+  .process-phase.p3{border-top:6px solid var(--plum);}
+  .process-phase.p4{border-top:6px solid var(--sage);}
+  .process-phase.p5{border-top:6px solid var(--navy);}
   .process-num{
     font-family:'JetBrains Mono', monospace;
     font-size:10px;
@@ -843,8 +844,9 @@
     margin-bottom:6px;
   }
   .process-phase.p2 .process-num{color:var(--gold);}
-  .process-phase.p3 .process-num{color:var(--sage);}
-  .process-phase.p4 .process-num{color:var(--navy);}
+  .process-phase.p3 .process-num{color:var(--plum);}
+  .process-phase.p4 .process-num{color:var(--sage);}
+  .process-phase.p5 .process-num{color:var(--navy);}
   .process-verb{
     font-family:'Fraunces', serif;
     font-size:32px;
@@ -855,8 +857,9 @@
   }
   .process-verb em{font-style:italic;color:var(--accent);}
   .process-phase.p2 .process-verb em{color:var(--gold);}
-  .process-phase.p3 .process-verb em{color:var(--sage);}
-  .process-phase.p4 .process-verb em{color:var(--navy);}
+  .process-phase.p3 .process-verb em{color:var(--plum);}
+  .process-phase.p4 .process-verb em{color:var(--sage);}
+  .process-phase.p5 .process-verb em{color:var(--navy);}
   .process-q{
     font-family:'Fraunces', serif;
     font-style:italic;
@@ -1270,7 +1273,7 @@
   .phases-intro em{color:var(--accent);font-style:italic;}
   .phases-grid{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap:16px;
   }
   .phase-card{
@@ -3285,7 +3288,19 @@
       </div>
       <div class="phase-card">
         <div class="phase-num">Phase 03</div>
-        <div class="phase-title"><em>Deliver</em></div>
+        <div class="phase-title"><em>Develop</em></div>
+        <div class="phase-q">What materials, tools, and infrastructure must be built?</div>
+        <div class="phase-chips">
+          <span class="phase-chip">Outline</span>
+          <span class="phase-chip">Slides</span>
+          <span class="phase-chip">LMS</span>
+          <span class="phase-chip">Pre/post tests</span>
+          <span class="phase-chip">Booklet</span>
+        </div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">Phase 04</div>
+        <div class="phase-title"><em>Implement</em></div>
         <div class="phase-q">How does the session actually unfold in the room?</div>
         <div class="phase-chips">
           <span class="phase-chip">Mehrabian</span>
@@ -3296,7 +3311,7 @@
         </div>
       </div>
       <div class="phase-card">
-        <div class="phase-num">Phase 04</div>
+        <div class="phase-num">Phase 05</div>
         <div class="phase-title"><em>Evaluate</em></div>
         <div class="phase-q">Did anything actually change — and how do we prove it?</div>
         <div class="phase-chips">
@@ -3314,7 +3329,7 @@
     <div class="section-header">
       <div class="section-num">§</div>
       <div class="section-title">The <em>Training</em> Process · How It All Fits</div>
-      <div class="section-kicker">Four phases · one loop</div>
+      <div class="section-kicker">Five phases · one loop</div>
     </div>
 
     <div class="process-map">
@@ -3343,7 +3358,19 @@
       </div>
       <div class="process-phase p3">
         <div class="process-num">Phase 03</div>
-        <div class="process-verb"><em>Deliver</em></div>
+        <div class="process-verb"><em>Develop</em></div>
+        <div class="process-q">What materials, tools, and infrastructure must be built before the session?</div>
+        <div class="process-refs">
+          <span class="process-ref">Course outline</span>
+          <span class="process-ref">Slides &amp; tools</span>
+          <span class="process-ref">LMS / Booklet</span>
+          <span class="process-ref">Pre/post tests</span>
+          <span class="process-ref">Certification</span>
+        </div>
+      </div>
+      <div class="process-phase p4">
+        <div class="process-num">Phase 04</div>
+        <div class="process-verb"><em>Implement</em></div>
         <div class="process-q">How does the session actually unfold in the room?</div>
         <div class="process-refs">
           <span class="process-ref">Mehrabian</span>
@@ -3353,8 +3380,8 @@
           <span class="process-ref">Inventory</span>
         </div>
       </div>
-      <div class="process-phase p4">
-        <div class="process-num">Phase 04</div>
+      <div class="process-phase p5">
+        <div class="process-num">Phase 05</div>
         <div class="process-verb"><em>Evaluate</em></div>
         <div class="process-q">Did anything actually change — and how do we prove it?</div>
         <div class="process-refs">
@@ -4093,7 +4120,7 @@
 
       <div class="addie-step">
         <div class="addie-num">Stage 04</div>
-        <div class="addie-title"><em>D</em>elivery</div>
+        <div class="addie-title"><em>I</em>mplement</div>
         <div class="addie-items">
           <div>Slides · computer · projector · USB · internet</div>
           <div>Handouts · sign-in sheets · badges</div>
@@ -4217,8 +4244,8 @@
   <div class="section" style="--i:14;">
     <div class="section-header">
       <div class="section-num">14</div>
-      <div class="section-title">The <em>Delivery</em> Kit</div>
-      <div class="section-kicker">Nothing left to chance on the day</div>
+      <div class="section-title">Inside the <em>Implement</em> Stage · The Delivery Kit</div>
+      <div class="section-kicker">Nothing left to chance on the day · ADDIE Stage 04</div>
     </div>
 
     <div class="checklist-grid">
@@ -4656,7 +4683,7 @@
   <div class="whole-game">
     <div class="whole-game-label">◆ The Whole Game · In One Sentence</div>
     <div class="whole-game-text">
-      Design <em>backwards</em> from a SMART objective. Build for all four <em>VARK</em> channels. Deliver through <strong>INTRO</strong>, the <strong>5 R's</strong>, and a <strong>Wrap-Up</strong>. Evaluate at all five <em>Kirkpatrick-Phillips</em> levels. Adjust. Repeat.
+      <em>Analyse</em> the learner. <em>Design</em> the blueprint. <em>Develop</em> the materials. <em>Implement</em> through <strong>INTRO</strong>, the <strong>5 R's</strong>, and a <strong>Wrap-Up</strong>. <em>Evaluate</em> at all five <strong>Kirkpatrick-Phillips</strong> levels. Adjust. Repeat.
     </div>
   </div>
 
@@ -5024,7 +5051,7 @@ const SCENARIOS = [
   // ============ PHASE 3: DELIVER (3 scenarios) ============
   {
     phase: "deliver",
-    phaseLabel: "DELIVER",
+    phaseLabel: "IMPLEMENT",
     title: "The <em>expert's</em> monologue",
     frameworks: "INTRO · Knowles · 4 I's · Kolb",
     scenario: `A veteran consultant is brought in to train 25 mid-level managers on "Strategic Thinking." He is world-class in his field with a PhD and 20 years of experience.
@@ -5044,7 +5071,7 @@ const SCENARIOS = [
   },
   {
     phase: "deliver",
-    phaseLabel: "DELIVER",
+    phaseLabel: "IMPLEMENT",
     title: "The <em>one-size-fits-all</em> room",
     frameworks: "5 R's · DISC · Honey-Mumford",
     scenario: `A trainer delivers a 3-hour Excel Advanced workshop to 20 participants. Her approach:
@@ -5068,7 +5095,7 @@ const SCENARIOS = [
   },
   {
     phase: "deliver",
-    phaseLabel: "DELIVER",
+    phaseLabel: "IMPLEMENT",
     title: "The <em>disengaged</em> closing",
     frameworks: "Wrap-Up Story · 5 R's · Knowles",
     scenario: `A well-prepared trainer runs a highly-engaging 2-day workshop on conflict resolution. Participants laugh, participate, role-play, and give 4.7/5 live ratings at the end of Day 1.
@@ -5385,7 +5412,7 @@ function showResults(){
     nextSteps = `You're ready to <em>train trainers</em>. Consider pursuing the ACP (Advanced Certified Practitioner) designation, or co-facilitating BCT cohorts yourself. Your next growth edge is designing your own materials.`;
   } else if (pct >= 75) {
     verdictTitle = `<em>Competent</em> Practitioner`;
-    verdictBody = `Your framework recognition is <em>strong</em> but not yet instinctive. You spot most issues in most scenarios — the remaining gap is usually in phase-transitions, where one framework hands off to another (e.g., Analyse → Design, or Delivery → Evaluation).`;
+    verdictBody = `Your framework recognition is <em>strong</em> but not yet instinctive. You spot most issues in most scenarios — the remaining gap is usually in phase-transitions, where one framework hands off to another (e.g., Analyse → Design, or Implement → Evaluate).`;
     nextSteps = `Re-read your weakest phase below. Then redesign <em>one real training</em> you've delivered using the compendium as a checklist. The next time you deliver it, the difference will be visible.`;
   } else if (pct >= 55) {
     verdictTitle = `<em>Emerging</em> Practitioner`;
@@ -5406,7 +5433,7 @@ function showResults(){
   const phaseLabels = {
     analyze: 'Analyse',
     design: 'Design',
-    deliver: 'Deliver',
+    deliver: 'Implement',
     evaluate: 'Evaluate'
   };
   const phaseScores = {};
@@ -5487,7 +5514,7 @@ function getPhaseDescription(phase, score){
     },
     deliver: {
       high: "You recognise INTRO omissions, incomplete Kolb cycles, and missing 5 R's in real time. You see the opening and closing as sacred real estate.",
-      low: "Focus on the session architecture section: INTRO, 5 R's, Wrap-Up. Delivery is where diagnostic fluency becomes most visible — and most teachable."
+      low: "Focus on the session architecture section: INTRO, 5 R's, Wrap-Up. The Implement phase is where diagnostic fluency becomes most visible — and most teachable."
     },
     evaluate: {
       high: "You refuse to accept L1 as evidence of value. You understand the Kirkpatrick-Phillips ladder and know why most training dies at L2.",
